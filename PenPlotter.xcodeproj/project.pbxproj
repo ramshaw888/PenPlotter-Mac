@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		930C5BAD195EDFCB00F5EA8D /* PenPlotter.m in Sources */ = {isa = PBXBuildFile; fileRef = 930C5BAC195EDFCB00F5EA8D /* PenPlotter.m */; };
+		93113124196C2C7A00FF6072 /* CartesianPlaneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93113123196C2C7A00FF6072 /* CartesianPlaneView.m */; };
+		931ADFDE19447A11008901ED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931ADFDD19447A11008901ED /* Cocoa.framework */; };
+		931ADFE819447A11008901ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 931ADFE619447A11008901ED /* InfoPlist.strings */; };
+		931ADFEA19447A11008901ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 931ADFE919447A11008901ED /* main.m */; };
+		931ADFEE19447A11008901ED /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 931ADFEC19447A11008901ED /* Credits.rtf */; };
+		931ADFF119447A11008901ED /* PenPlotterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 931ADFF019447A11008901ED /* PenPlotterAppDelegate.m */; };
+		931ADFF419447A11008901ED /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 931ADFF219447A11008901ED /* MainMenu.xib */; };
+		931ADFF619447A11008901ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931ADFF519447A11008901ED /* Images.xcassets */; };
+		931ADFFD19447A11008901ED /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931ADFFC19447A11008901ED /* XCTest.framework */; };
+		931ADFFE19447A11008901ED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931ADFDD19447A11008901ED /* Cocoa.framework */; };
+		931AE00619447A12008901ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 931AE00419447A12008901ED /* InfoPlist.strings */; };
+		931AE00819447A12008901ED /* PenPlotterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 931AE00719447A12008901ED /* PenPlotterTests.m */; };
+		934C7136195C104D00272C41 /* Queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 934C7135195C104D00272C41 /* Queue.c */; };
+		934C7138195C39BC00272C41 /* Line.c in Sources */ = {isa = PBXBuildFile; fileRef = 934C7137195C39BC00272C41 /* Line.c */; };
+		9354670B196D60F300F0749D /* CartesianPlaneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9354670A196D60F300F0749D /* CartesianPlaneViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		931ADFFF19447A12008901ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 931ADFD219447A11008901ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 931ADFD919447A11008901ED;
+			remoteInfo = PenPlotter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		930C5BAB195EDFCB00F5EA8D /* PenPlotter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PenPlotter.h; sourceTree = "<group>"; };
+		930C5BAC195EDFCB00F5EA8D /* PenPlotter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PenPlotter.m; sourceTree = "<group>"; };
+		93113122196C2C7A00FF6072 /* CartesianPlaneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CartesianPlaneView.h; path = ../CartesianPlaneView.h; sourceTree = "<group>"; };
+		93113123196C2C7A00FF6072 /* CartesianPlaneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CartesianPlaneView.m; path = ../CartesianPlaneView.m; sourceTree = "<group>"; };
+		931ADFDA19447A11008901ED /* PenPlotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PenPlotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		931ADFDD19447A11008901ED /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		931ADFE019447A11008901ED /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		931ADFE119447A11008901ED /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		931ADFE219447A11008901ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		931ADFE519447A11008901ED /* PenPlotter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PenPlotter-Info.plist"; sourceTree = "<group>"; };
+		931ADFE719447A11008901ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		931ADFE919447A11008901ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		931ADFEB19447A11008901ED /* PenPlotter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PenPlotter-Prefix.pch"; sourceTree = "<group>"; };
+		931ADFED19447A11008901ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		931ADFEF19447A11008901ED /* PenPlotterAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PenPlotterAppDelegate.h; sourceTree = "<group>"; };
+		931ADFF019447A11008901ED /* PenPlotterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PenPlotterAppDelegate.m; sourceTree = "<group>"; };
+		931ADFF319447A11008901ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		931ADFF519447A11008901ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		931ADFFB19447A11008901ED /* PenPlotterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PenPlotterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		931ADFFC19447A11008901ED /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		931AE00319447A12008901ED /* PenPlotterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PenPlotterTests-Info.plist"; sourceTree = "<group>"; };
+		931AE00519447A12008901ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		931AE00719447A12008901ED /* PenPlotterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PenPlotterTests.m; sourceTree = "<group>"; };
+		934C7135195C104D00272C41 /* Queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Queue.c; sourceTree = "<group>"; };
+		934C7137195C39BC00272C41 /* Line.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Line.c; sourceTree = "<group>"; };
+		93546709196D60F300F0749D /* CartesianPlaneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartesianPlaneViewController.h; sourceTree = "<group>"; };
+		9354670A196D60F300F0749D /* CartesianPlaneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartesianPlaneViewController.m; sourceTree = "<group>"; };
+		93C53675195CF35E003CD139 /* Line.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		93C53676195CF391003CD139 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		931ADFD719447A11008901ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931ADFDE19447A11008901ED /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		931ADFF819447A11008901ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931ADFFE19447A11008901ED /* Cocoa.framework in Frameworks */,
+				931ADFFD19447A11008901ED /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		931ADFD119447A11008901ED = {
+			isa = PBXGroup;
+			children = (
+				931ADFE319447A11008901ED /* PenPlotter */,
+				931AE00119447A12008901ED /* PenPlotterTests */,
+				931ADFDC19447A11008901ED /* Frameworks */,
+				931ADFDB19447A11008901ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		931ADFDB19447A11008901ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				931ADFDA19447A11008901ED /* PenPlotter.app */,
+				931ADFFB19447A11008901ED /* PenPlotterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		931ADFDC19447A11008901ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				931ADFDD19447A11008901ED /* Cocoa.framework */,
+				931ADFFC19447A11008901ED /* XCTest.framework */,
+				931ADFDF19447A11008901ED /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		931ADFDF19447A11008901ED /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				931ADFE019447A11008901ED /* AppKit.framework */,
+				931ADFE119447A11008901ED /* CoreData.framework */,
+				931ADFE219447A11008901ED /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		931ADFE319447A11008901ED /* PenPlotter */ = {
+			isa = PBXGroup;
+			children = (
+				931ADFEF19447A11008901ED /* PenPlotterAppDelegate.h */,
+				931ADFF019447A11008901ED /* PenPlotterAppDelegate.m */,
+				934C7135195C104D00272C41 /* Queue.c */,
+				93C53676195CF391003CD139 /* Queue.h */,
+				930C5BAB195EDFCB00F5EA8D /* PenPlotter.h */,
+				930C5BAC195EDFCB00F5EA8D /* PenPlotter.m */,
+				934C7137195C39BC00272C41 /* Line.c */,
+				93C53675195CF35E003CD139 /* Line.h */,
+				931ADFF219447A11008901ED /* MainMenu.xib */,
+				93113122196C2C7A00FF6072 /* CartesianPlaneView.h */,
+				93113123196C2C7A00FF6072 /* CartesianPlaneView.m */,
+				93546709196D60F300F0749D /* CartesianPlaneViewController.h */,
+				9354670A196D60F300F0749D /* CartesianPlaneViewController.m */,
+				931ADFF519447A11008901ED /* Images.xcassets */,
+				931ADFE419447A11008901ED /* Supporting Files */,
+			);
+			path = PenPlotter;
+			sourceTree = "<group>";
+		};
+		931ADFE419447A11008901ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				931ADFE519447A11008901ED /* PenPlotter-Info.plist */,
+				931ADFE619447A11008901ED /* InfoPlist.strings */,
+				931ADFE919447A11008901ED /* main.m */,
+				931ADFEB19447A11008901ED /* PenPlotter-Prefix.pch */,
+				931ADFEC19447A11008901ED /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		931AE00119447A12008901ED /* PenPlotterTests */ = {
+			isa = PBXGroup;
+			children = (
+				931AE00719447A12008901ED /* PenPlotterTests.m */,
+				931AE00219447A12008901ED /* Supporting Files */,
+			);
+			path = PenPlotterTests;
+			sourceTree = "<group>";
+		};
+		931AE00219447A12008901ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				931AE00319447A12008901ED /* PenPlotterTests-Info.plist */,
+				931AE00419447A12008901ED /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		931ADFD919447A11008901ED /* PenPlotter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 931AE00B19447A12008901ED /* Build configuration list for PBXNativeTarget "PenPlotter" */;
+			buildPhases = (
+				931ADFD619447A11008901ED /* Sources */,
+				931ADFD719447A11008901ED /* Frameworks */,
+				931ADFD819447A11008901ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PenPlotter;
+			productName = PenPlotter;
+			productReference = 931ADFDA19447A11008901ED /* PenPlotter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		931ADFFA19447A11008901ED /* PenPlotterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 931AE00E19447A12008901ED /* Build configuration list for PBXNativeTarget "PenPlotterTests" */;
+			buildPhases = (
+				931ADFF719447A11008901ED /* Sources */,
+				931ADFF819447A11008901ED /* Frameworks */,
+				931ADFF919447A11008901ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				931AE00019447A12008901ED /* PBXTargetDependency */,
+			);
+			name = PenPlotterTests;
+			productName = PenPlotterTests;
+			productReference = 931ADFFB19447A11008901ED /* PenPlotterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		931ADFD219447A11008901ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PenPlotter;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Aaron Ramshaw";
+				TargetAttributes = {
+					931ADFFA19447A11008901ED = {
+						TestTargetID = 931ADFD919447A11008901ED;
+					};
+				};
+			};
+			buildConfigurationList = 931ADFD519447A11008901ED /* Build configuration list for PBXProject "PenPlotter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 931ADFD119447A11008901ED;
+			productRefGroup = 931ADFDB19447A11008901ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				931ADFD919447A11008901ED /* PenPlotter */,
+				931ADFFA19447A11008901ED /* PenPlotterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		931ADFD819447A11008901ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931ADFE819447A11008901ED /* InfoPlist.strings in Resources */,
+				931ADFF619447A11008901ED /* Images.xcassets in Resources */,
+				931ADFEE19447A11008901ED /* Credits.rtf in Resources */,
+				931ADFF419447A11008901ED /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		931ADFF919447A11008901ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931AE00619447A12008901ED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		931ADFD619447A11008901ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931ADFEA19447A11008901ED /* main.m in Sources */,
+				934C7138195C39BC00272C41 /* Line.c in Sources */,
+				931ADFF119447A11008901ED /* PenPlotterAppDelegate.m in Sources */,
+				9354670B196D60F300F0749D /* CartesianPlaneViewController.m in Sources */,
+				930C5BAD195EDFCB00F5EA8D /* PenPlotter.m in Sources */,
+				93113124196C2C7A00FF6072 /* CartesianPlaneView.m in Sources */,
+				934C7136195C104D00272C41 /* Queue.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		931ADFF719447A11008901ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931AE00819447A12008901ED /* PenPlotterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		931AE00019447A12008901ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 931ADFD919447A11008901ED /* PenPlotter */;
+			targetProxy = 931ADFFF19447A12008901ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		931ADFE619447A11008901ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				931ADFE719447A11008901ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		931ADFEC19447A11008901ED /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				931ADFED19447A11008901ED /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		931ADFF219447A11008901ED /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				931ADFF319447A11008901ED /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		931AE00419447A12008901ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				931AE00519447A12008901ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		931AE00919447A12008901ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		931AE00A19447A12008901ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		931AE00C19447A12008901ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PenPlotter/PenPlotter-Prefix.pch";
+				INFOPLIST_FILE = "PenPlotter/PenPlotter-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PenPlotter/PenPlotter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		931AE00D19447A12008901ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PenPlotter/PenPlotter-Prefix.pch";
+				INFOPLIST_FILE = "PenPlotter/PenPlotter-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PenPlotter/PenPlotter-Bridging-Header.h";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		931AE00F19447A12008901ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PenPlotter.app/Contents/MacOS/PenPlotter";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PenPlotter/PenPlotter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PenPlotterTests/PenPlotterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		931AE01019447A12008901ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PenPlotter.app/Contents/MacOS/PenPlotter";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PenPlotter/PenPlotter-Prefix.pch";
+				INFOPLIST_FILE = "PenPlotterTests/PenPlotterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		931ADFD519447A11008901ED /* Build configuration list for PBXProject "PenPlotter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				931AE00919447A12008901ED /* Debug */,
+				931AE00A19447A12008901ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		931AE00B19447A12008901ED /* Build configuration list for PBXNativeTarget "PenPlotter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				931AE00C19447A12008901ED /* Debug */,
+				931AE00D19447A12008901ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		931AE00E19447A12008901ED /* Build configuration list for PBXNativeTarget "PenPlotterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				931AE00F19447A12008901ED /* Debug */,
+				931AE01019447A12008901ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 931ADFD219447A11008901ED /* Project object */;
+}
